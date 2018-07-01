@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { withRouter } from  'react-router';
 import Portfolio from './Portfolio';
 import Nav from './Nav';
-import Routes from '../routes';
+import Hero from './Hero';
+
 
 class LandingPage extends Component {
   constructor() {
@@ -23,10 +24,9 @@ class LandingPage extends Component {
 
     return (
       <div>
-        <Nav areLinksHidden={areLinksHidden} currentRoute={pathname} onMenuClick={this.toggleNavLinks} />
-        <div className="container">
-          {Routes}
-        </div>
+        {/* <Nav areLinksHidden={areLinksHidden} currentRoute={pathname} onMenuClick={this.toggleNavLinks} /> */}
+          <Hero />
+          <div style={{height: "500px"}}></div>
       </div>
     );
   }
