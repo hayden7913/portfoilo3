@@ -8,6 +8,10 @@ export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
     'is-active': !areLinksHidden
   });
 
+  const navLeftClass = classNames('nav-left', {
+    'is-visible': !areLinksHidden
+  });
+
   const menuIconClass = classNames('nav-menu-icon', {
     'icon-menu': areLinksHidden,
     'icon-close': !areLinksHidden,
@@ -28,14 +32,13 @@ export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
   return (
     <nav className={navClass}>
       <div className="nav-container">
-        <div className="nav-left">
-          <span className="nav-name">Hayden HarkWright</span>
-          <span className={menuIconClass} onClick={onMenuClick}></span>
+        <div className={navLeftClass}>
+          <Link to="/" className={aboutLinkClass}>HOME</Link>
+          <Link to="/portfolio" className={portfolioLinkClass}>PROJECTS</Link>
+          <Link to="/contact" className={contactLinkClass}>ABOUT</Link>
         </div>
         <div className="nav-right">
-          <Link to="/" className={aboutLinkClass}>About</Link>
-          <Link to="/portfolio" className={portfolioLinkClass}>Portfolio</Link>
-          <Link to="/contact" className={contactLinkClass}>Contact</Link>
+          <span className={menuIconClass} onClick={onMenuClick}></span>
         </div>
       </div>
     </nav>

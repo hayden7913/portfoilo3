@@ -1,12 +1,14 @@
 .nav {
-  border-bottom: 1px solid $grey-light;
   color: $black-faded;
   font-weight: 400;
   height: 50px;
   line-height: 50px;
   overflow: hidden;
-  position: relative;
+  padding-top: 20px;
+  position: fixed;
   transition: height .4s ease;
+  z-index: 100;
+  width: 100%;
 
   @media only screen and (min-width: 768px) {
     border-bottom: none;
@@ -19,10 +21,10 @@
   }
 
   &.is-active {
-    height: 150px;
+    background-color: white;
+    opacity: .8;
+    height: 125px;
   }
-  // padding: 50px 0;
-  // padding: 25px 10px;
 }
 
 .nav-left, .nav-right {
@@ -34,11 +36,16 @@
   }
 }
 
-.nav-right {
+.nav-left {
   text-align: left;
+  display: none;
 
   @media only screen and (min-width: 768px) {
     text-align: right;
+  }
+
+  &.is-visible {
+    display: inline-block;
   }
 }
 
@@ -53,19 +60,21 @@
   text-decoration: inherit;
 
   @media only screen and (min-width: 768px) {
-    display: inline-block;
+    display: block;
   }
 
   &:hover {
-    color: $color-primary;
+    // color: $color-primary;
   }
 
   &.is-active {
-    color: $color-primary;
+    // color: $color-primary;
   }
 }
 
 .nav-menu-icon {
+  font-size: 20px;
+  opacity: 0.9;
   position: absolute;
   right: 10px;
   top: 18px;
