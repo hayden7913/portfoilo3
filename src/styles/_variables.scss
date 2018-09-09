@@ -13,17 +13,21 @@ $grey-medium: #bdbdbd;
 $grey-dark: #b0b0b0;
 $grey-super-dark: #757575;
 $grey-super-light: #fafafa;
-$teal-super-light: #5ec3be;
+$orange: #f5a732;
+$red: #ed7b61;
+$teal: #5aaba7;
 $teal-light: #55b6b1;
+$teal-super-light: #5ec3be;
 $white: #ffffff;
-$teal: #49ada4;
 $indigo: #4055d4;
 
 $color-primary: $green;
 $color-primary: $teal;
 $color-primary: #26A69A;
 
-
+$color-pcb-flow: $orange;
+$color-pomtracker: $teal;
+$color-anki-assistant: $green;
 //fonts
 // $font-primary: 'Montserrat';
 $font-primary:  'Lato', sans-serif;

@@ -7,6 +7,7 @@ export default function Portfolio() {
       <PortfolioItem
         alt="portfolio demo item"
         imgSrc="/images/pcb-flow-mockup.png"
+        itemName="pcb-flow"
         demoUrl="http://pcb-flow.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/bread-pcb-tool"
         title="PCB Flow"
@@ -15,7 +16,8 @@ export default function Portfolio() {
       />
       <PortfolioItem
         alt="portfolio demo item"
-        imgSrc="/images/laptop-pomtracker.png"
+        imgSrc="/images/pomtracker-mockup.png"
+        itemName="pomtracker"
         demoUrl="http://pomtracker.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/PomTracker-Capstone"
         title="Pomtracker"
@@ -25,6 +27,7 @@ export default function Portfolio() {
       <PortfolioItem
         alt="portfolio demo item"
         imgSrc="/images/laptop-anki-assistant.png"
+        itemName="anki-assistant"
         demoUrl="http://anki-assistant.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/AnkiAssistant"
         title="AnkiAssistant"
