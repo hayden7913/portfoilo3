@@ -6,7 +6,7 @@ export default function Portfolio() {
     <div className="portfolio-list">
       <PortfolioItem
         alt="portfolio demo item"
-        imgSrc="/images/laptop-pcb-flow.png"
+        imgSrc="/images/pcb-flow-mockup.png"
         demoUrl="http://pcb-flow.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/bread-pcb-tool"
         title="PCB Flow"

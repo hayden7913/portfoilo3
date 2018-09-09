@@ -1,18 +1,17 @@
 .divider {
   font-weight: 300;
   color: $grey-medium;
+  display: flex;
   font-size: 45px;
   margin-top: 20px;
 }
 
 .divider-line {
   border-bottom: 4px solid $grey-light;
-  display: inline-block;
   margin-bottom: 4px;
   width: 40%;
 }
 
-.divider-title{
-  display: inline-block;
+.divider-title {
   padding-left: 20px;
 }

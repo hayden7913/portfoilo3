@@ -28,6 +28,7 @@ class LandingPage extends Component {
         <Nav areLinksHidden={areLinksHidden} currentRoute={pathname} onMenuClick={this.toggleNavLinks} />
         <Hero />
         <Divider />
+        <Portfolio />
         <div style={{height: "500px"}}></div>
       </div>
     );
