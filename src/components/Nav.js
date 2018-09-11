@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Portfolio from './Portfolio';
 
 export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
@@ -33,9 +33,28 @@ export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
     <nav className={navClass}>
       <div className="nav-container">
         <div className={navLeftClass}>
-          <Link to="/" className={aboutLinkClass}>HOME</Link>
-          <Link to="/portfolio" className={portfolioLinkClass}>PROJECTS</Link>
-          <Link to="/contact" className={contactLinkClass}>ABOUT</Link>
+          <a
+            className={aboutLinkClass}
+            onClick={scroll.scrollToTop()}
+          >
+            HOME
+          </a>
+          <Link className={portfolioLinkClass}
+            duration={500}
+            smooth
+            spy
+            to="projects"
+          >
+            PROJECTS
+          </Link>
+          <Link className={contactLinkClass}
+            duration={500}
+            smooth
+            spy
+            to="about"
+          >
+            ABOUT
+          </Link>
         </div>
         <div className="nav-right">
           <span className={menuIconClass} onClick={onMenuClick}></span>

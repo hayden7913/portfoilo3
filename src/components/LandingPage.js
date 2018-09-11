@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from  'react-router';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import About from './About';
 import Divider from './Divider';
 import Hero from './Hero';
@@ -16,11 +17,10 @@ class LandingPage extends Component {
   }
 
   componentDidMount() {
-    console.log('hola')
     window.addEventListener('scroll', () => {
-      const scroll = document.documentElement.scrollTop || document.body.scrollTop;
-      console.log(window.scrollY);
-      console.log(scroll);
+      // const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+      // console.log(window.scrollY);
+      // console.log(scroll);
     });
   }
 
@@ -35,7 +35,12 @@ class LandingPage extends Component {
 
     return (
       <div>
-        <Nav areLinksHidden={areLinksHidden} currentRoute={pathname} onMenuClick={this.toggleNavLinks} />
+       <Nav
+         areLinksHidden={areLinksHidden}
+         currentRoute={pathname}
+         onMenuClick={this.toggleNavLinks}
+         scrollTo={this.scroll}
+       />
         <Hero />
         <Divider name="projects" title="projects" />
         <Portfolio />
