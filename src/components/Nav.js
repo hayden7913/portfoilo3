@@ -35,7 +35,6 @@ export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
         <div className={navLeftClass}>
           <a
             className={aboutLinkClass}
-            onClick={scroll.scrollToTop()}
           >
             HOME
           </a>

@@ -16,14 +16,6 @@ class LandingPage extends Component {
     };
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', () => {
-      // const scroll = document.documentElement.scrollTop || document.body.scrollTop;
-      // console.log(window.scrollY);
-      // console.log(scroll);
-    });
-  }
-
   toggleNavLinks = () => {
     const { areLinksHidden } = this.state;
     this.setState({ areLinksHidden: !areLinksHidden});
@@ -39,7 +31,6 @@ class LandingPage extends Component {
          areLinksHidden={areLinksHidden}
          currentRoute={pathname}
          onMenuClick={this.toggleNavLinks}
-         scrollTo={this.scroll}
        />
         <Hero />
         <Divider name="projects" title="projects" />
