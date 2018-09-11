@@ -1,4 +1,7 @@
 .about-section {
+  padding: 20px 40px;
+  text-align: center;
+
   @media only screen and (min-width: 768px) {
     font-size: 22px;
     margin-top: 10%;
@@ -14,6 +17,10 @@
   }
 }
 
+.about-image {
+  width: 200px;
+}
+
 .about-heading {
   font-size: 1.85em;
 
@@ -27,10 +34,8 @@
 }
 
 .about-paragraph, .about-contact-wrapper {
-  color: black;
-  font-family: $font-secondary;
-  font-weight: 300;
   max-width: 100%;
+  text-align: left;
   width: 850px;
 
   @media only screen and (min-width: 1224px) {
@@ -43,10 +48,15 @@
 
 .about-contact-message {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 
   @media only screen and (min-width: 768px) {
     display: inline-block;
     margin-right: 5px;
   }
+}
+
+.about-contact-link {
+  display: block;
+  margin-bottom: 22px;
 }

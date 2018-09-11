@@ -26,7 +26,7 @@ export default function Portfolio() {
       />
       <PortfolioItem
         alt="portfolio demo item"
-        imgSrc="/images/laptop-anki-assistant.png"
+        imgSrc="/images/anki-assistant-mockup.png"
         itemName="anki-assistant"
         demoUrl="http://anki-assistant.herokuapp.com/"
         repoUrl="https://github.com/hayden7913/AnkiAssistant"

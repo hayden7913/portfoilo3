@@ -4,12 +4,18 @@
   display: flex;
   font-size: 45px;
   margin-top: 20px;
+  padding-right: 10px;
 }
 
 .divider-line {
+  display: inline-block;
   border-bottom: 4px solid $grey-light;
   margin-bottom: 4px;
-  width: 40%;
+  width: 100%;
+
+  &.divider-line-about {
+    width: 33%;
+  }
 }
 
 .divider-title {

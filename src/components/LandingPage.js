@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from  'react-router';
+import About from './About';
 import Divider from './Divider';
 import Hero from './Hero';
 import Nav from './Nav';
@@ -11,7 +12,16 @@ class LandingPage extends Component {
     super();
     this.state = {
       areLinksHidden: true,
-    }
+    };
+  }
+
+  componentDidMount() {
+    console.log('hola')
+    window.addEventListener('scroll', () => {
+      const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+      console.log(window.scrollY);
+      console.log(scroll);
+    });
   }
 
   toggleNavLinks = () => {
@@ -27,9 +37,10 @@ class LandingPage extends Component {
       <div>
         <Nav areLinksHidden={areLinksHidden} currentRoute={pathname} onMenuClick={this.toggleNavLinks} />
         <Hero />
-        <Divider />
+        <Divider name="projects" title="projects" />
         <Portfolio />
-        <div style={{height: "500px"}}></div>
+        <Divider name="about" title="about me" />
+        <About />
       </div>
     );
   }

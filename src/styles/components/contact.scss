@@ -1,17 +1,15 @@
 .contact {
-  color: black;
-  margin-top: 20%;
   position: relative;
-  text-align: center;
+  text-align: left;
   line-height: 2;
 }
 
 .contact-social-media-link {
-  color: $black-faded;
+  color: $grey-super-dark;
   cursor: pointer;
   display: inline-block;
   font-size: 1.5em;
-  margin: 10px;
+  margin-right: 15px;
 
   &:hover {
     color: black;

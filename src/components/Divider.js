@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export default function Divider() {
+export default function Divider({ name, title }) {
   return (
     <div className="divider">
-      <span className="divider-line"></span>
-      <span className="divider-title">projects</span>
+      <div className={`divider-line divider-line-${name}`}></div>
+      <span className="divider-title">{title}</span>
     </div>
   );
 }
