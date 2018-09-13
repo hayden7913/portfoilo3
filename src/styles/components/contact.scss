@@ -4,7 +4,16 @@
   line-height: 2;
 }
 
-.contact-social-media-link {
+.contact-links {
+  display: inline-block;
+
+  &.nav-contact-links {
+    color: red;
+    font-size: .9em;
+  }
+}
+
+.contact-link {
   color: $grey-super-dark;
   cursor: pointer;
   display: inline-block;

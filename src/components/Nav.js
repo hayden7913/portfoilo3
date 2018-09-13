@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import ContactLinks from './ContactLinks';
 import Portfolio from './Portfolio';
 
 export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
@@ -60,6 +61,7 @@ export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
           </Link>
         </div>
         <div className="nav-right">
+          <ContactLinks className="nav-contact-links" />
           <span className={menuIconClass} onClick={onMenuClick}></span>
         </div>
       </div>

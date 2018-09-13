@@ -14,14 +14,14 @@ export default function About() {
           <a className="about-contact-link link" href="mailto:hayden321@gmail.com">hayden321@gmail.com</a>
         </span>
         <div className="contact">
-          <div className="contact-social-media-links">
-            <a className="contact-social-media-link icon-github" href="https://github.com/hayden7913"></a>
+          <div className="contact-links">
+            <a className="contact-link icon-github" href="https://github.com/hayden7913"></a>
             <a
-              className="contact-social-media-link icon-linkedin"
+              className="contact-link icon-linkedin"
               href="https://www.linkedin.com/in/hayden-harkwright-2588b254"
             >
             </a>
-            <a className="contact-social-media-link icon-mail" href="mailto:hayden321@gmail.com"></a>
+            <a className="contact-link icon-mail" href="mailto:hayden321@gmail.com"></a>
           </div>
         </div>
       </section>
