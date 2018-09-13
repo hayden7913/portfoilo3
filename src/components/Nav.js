@@ -33,11 +33,15 @@ export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
     <nav className={navClass}>
       <div className="nav-container">
         <div className={navLeftClass}>
-          <a
+          <Link
             className={aboutLinkClass}
+            duration={500}
+            smooth
+            spy
+            to="home"
           >
             HOME
-          </a>
+          </Link>
           <Link className={portfolioLinkClass}
             duration={500}
             smooth

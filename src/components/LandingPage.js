@@ -26,7 +26,7 @@ class LandingPage extends Component {
     const { pathname } = this.props.history.location;
 
     return (
-      <div>
+      <Element name="home">
        <Nav
          areLinksHidden={areLinksHidden}
          currentRoute={pathname}
@@ -37,7 +37,7 @@ class LandingPage extends Component {
         <Portfolio />
         <Divider name="about" title="about me" />
         <About />
-      </div>
+      </Element>
     );
   }
 }
