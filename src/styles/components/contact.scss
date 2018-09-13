@@ -5,11 +5,14 @@
 }
 
 .contact-links {
-  display: inline-block;
 
   &.nav-contact-links {
-    color: red;
+    display: none;
     font-size: .9em;
+
+    @media only screen and (min-width: 768px) {
+      display: inline-block;
+    }
   }
 }
 

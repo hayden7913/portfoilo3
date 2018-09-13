@@ -6,7 +6,6 @@
   overflow: hidden;
   padding-top: 20px;
   position: fixed;
-  text-align: right;
   transition: height .4s ease;
   width: 100%;
   z-index: 100;
@@ -14,7 +13,7 @@
   @media only screen and (min-width: 768px) {
     border-bottom: none;
     line-height: 1;
-    padding: 35px 0;
+    padding: 27px 0;
   }
 
   @media only screen and (min-width: 1224px) {
@@ -50,6 +49,10 @@
   &.is-visible {
     display: inline-block;
   }
+}
+
+.nav-right {
+  text-align: right;
 }
 
 .nav-menu-item {
