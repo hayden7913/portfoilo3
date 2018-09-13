@@ -1,6 +1,6 @@
 .nav {
   color: $black-faded;
-  font-weight: 400;
+  font-weight: 300;
   height: 50px;
   line-height: 50px;
   overflow: hidden;
@@ -42,6 +42,9 @@
 
   @media only screen and (min-width: 768px) {
     text-align: right;
+    display: inline-block;
+    font-size: 1.1em;
+    color: black;
   }
 
   &.is-visible {
@@ -60,7 +63,7 @@
   text-decoration: inherit;
 
   @media only screen and (min-width: 768px) {
-    display: block;
+    display: inline-block;
   }
 
   &:hover {
