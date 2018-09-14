@@ -13,7 +13,14 @@ class LandingPage extends Component {
     super();
     this.state = {
       areLinksHidden: true,
+      scrollY: 0,
     };
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      this.setState({ scrollY: window.scrollY });
+    });
   }
 
   toggleNavLinks = () => {
@@ -22,15 +29,16 @@ class LandingPage extends Component {
   }
 
   render() {
-    const { areLinksHidden } = this.state;
+    const { areLinksHidden, scrollY } = this.state;
     const { pathname } = this.props.history.location;
 
     return (
       <Element name="home">
        <Nav
-         areLinksHidden={areLinksHidden}
-         currentRoute={pathname}
-         onMenuClick={this.toggleNavLinks}
+          areLinksHidden={areLinksHidden}
+          currentRoute={pathname}
+          onMenuClick={this.toggleNavLinks}
+          isTop={scrollY === 0}
        />
         <Hero />
         <Divider name="projects" title="projects" />

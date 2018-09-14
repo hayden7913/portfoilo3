@@ -4,9 +4,11 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 import ContactLinks from './ContactLinks';
 import Portfolio from './Portfolio';
 
-export default function Nav({ areLinksHidden, currentRoute, onMenuClick }) {
+export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }) {
   const navClass = classNames('nav', {
-    'is-active': !areLinksHidden
+    'is-active': !areLinksHidden,
+    // 'has-background': !isTop,
+    'has-background': true,
   });
 
   const navLeftClass = classNames('nav-left', {
