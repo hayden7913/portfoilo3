@@ -3,7 +3,7 @@
   font-weight: 300;
   line-height: 50px;
   overflow: hidden;
-  padding-top: 20px;
+  padding-top: 50px;
   position: fixed;
   transition: height .4s ease;
   width: 100%;
@@ -12,7 +12,8 @@
   @media only screen and (min-width: 768px) {
     border-bottom: none;
     line-height: 1;
-    padding: 10px 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   @media only screen and (min-width: 1224px) {
@@ -27,6 +28,7 @@
   }
 
   &.is-active {
+    padding-top: 20px;
     background-color: white;
     opacity: .8;
     height: 125px;

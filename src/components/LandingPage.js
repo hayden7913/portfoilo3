@@ -41,10 +41,10 @@ class LandingPage extends Component {
           isTop={scrollY === 0}
        />
         <Hero />
-          <Divider name="projects" title="projects" />
-          <Portfolio />
-          <Divider name="about" title="about me" />
-          <About />
+        <Divider name="projects" title="projects" />
+        <Portfolio />
+        <Divider name="about" title="about me" />
+        <About />
       </Element>
     );
   }
