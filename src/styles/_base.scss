@@ -58,11 +58,7 @@ label {
 }
 
 main {
-  padding: 100px 40px;
-
-  @include respond-to(small-screens) {
-    padding: 25px 0;
-  }
+  padding: 40px;
 }
 
 p {

@@ -1,8 +1,6 @@
 .nav {
-  // color: $black-faded;
-  color: white;
+  color: $black-faded;
   font-weight: 300;
-
   line-height: 50px;
   overflow: hidden;
   padding-top: 20px;
@@ -14,7 +12,7 @@
   @media only screen and (min-width: 768px) {
     border-bottom: none;
     line-height: 1;
-    padding: 27px 0;
+    padding: 10px 0;
   }
 
   @media only screen and (min-width: 1224px) {
@@ -23,7 +21,9 @@
 
   &.has-background {
     background-color: black;
+    color: white;
     opacity: .8;
+    transition: background-color .5s ease;
   }
 
   &.is-active {
@@ -49,7 +49,6 @@
   @media only screen and (min-width: 768px) {
     display: inline-block;
     font-size: 1.1em;
-    color: black;
   }
 
   &.is-visible {
@@ -62,7 +61,6 @@
 }
 
 .nav-menu-item {
-  color: white;
   display: block;
   line-height: 1;
   margin-left: 20px;
@@ -72,6 +70,7 @@
 
   @media only screen and (min-width: 768px) {
     display: inline-block;
+    margin: 0 10px;
   }
 
   &:hover {

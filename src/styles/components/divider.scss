@@ -2,16 +2,24 @@
   font-weight: 300;
   color: $grey-medium;
   display: flex;
-  font-size: 45px;
+  font-size: 3.4em;
+  opacity: .7;
   margin-top: 20px;
   padding-right: 10px;
+
+  &.divider-projects {
+    margin-right: 30px;
+  }
 }
 
 .divider-line {
   display: inline-block;
   border-bottom: 4px solid $grey-light;
-  margin-bottom: 4px;
   width: 100%;
+
+  &.divider-line-projects {
+    margin-bottom: 15px;
+  }
 
   &.divider-line-about {
     width: 33%;

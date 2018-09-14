@@ -7,8 +7,7 @@ import Portfolio from './Portfolio';
 export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }) {
   const navClass = classNames('nav', {
     'is-active': !areLinksHidden,
-    // 'has-background': !isTop,
-    'has-background': true,
+    'has-background': !isTop,
   });
 
   const navLeftClass = classNames('nav-left', {
