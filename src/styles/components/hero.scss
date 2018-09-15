@@ -4,11 +4,12 @@
   background-repeat: no-repeat;
   background-size: 410%;
   height: 100%;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 440px;
   width: 100%;
 
   @media only screen and (min-width : 768px) {
+    font-weight: 300;
     padding-top: 710px;
   }
 }

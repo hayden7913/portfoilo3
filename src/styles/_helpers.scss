@@ -23,12 +23,20 @@
 
 .nav-container {
   @extend %root-container;
-  // max-width: 1000px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .link {
   color: $color-primary;
   text-decoration: underline;
+}
+
+.main-content {
+  @media only screen and (min-width: 768px) {
+    font-size: 1.2em;
+  }
 }
 
 // theme colors
