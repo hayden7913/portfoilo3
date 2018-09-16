@@ -6,17 +6,24 @@
   height: 100%;
   font-weight: 400;
   padding-top: 390px;
+  font-size: 1.2em;
   width: 100%;
 
   @media only screen and (min-width : 768px) {
-    font-weight: 300;
+    background-size: 245%;
+    font-size: 1.3em;
     padding-top: 710px;
+  }
+
+  @media only screen and (min-width : 1024px) {
+    font-size: 1.5em;
   }
 }
 
 .hero-headings-wrapper {
   position: relative;
   height: 150px;
+  max-width: 700px;
 }
 
 .hero-headshot {
@@ -35,14 +42,13 @@
 
 .hero-heading-bar-wrapper {
   @media only screen and (min-width : 768px) {
-    margin-left: 100px;
+    margin-left: 200px;
   }
 }
 
 .hero-heading-bar {
   background-color: white;
   color: #212121;
-  font-size: 1.2em;
   opacity: 0.7;
   padding-top: 10px;
   padding-bottom: 0.2em;
@@ -60,7 +66,7 @@
 .hero-subheading-bar {
   background-color: black;
   color: white;
-  font-size: 1.2em;
+  font-size: .8em;
   opacity: 0.7;
   padding-top: 5px;
   padding-bottom: 10px;
@@ -73,7 +79,6 @@
 
   @media only screen and (min-width : 768px) {
     top: 60px;
-    width: 80%;
   }
 
 }
