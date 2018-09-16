@@ -3,7 +3,7 @@ import PortfolioItem from './PortfolioItem';
 
 export default function Portfolio() {
   return (
-    <div className="portfolio-list">
+    <section className="portfolio-list">
       <PortfolioItem
         alt="portfolio demo item"
         imgSrc="/images/pcb-flow-mockup.png"
@@ -34,6 +34,6 @@ export default function Portfolio() {
         techIcons={["jquery", "sass"]}
         description="AnkiAssistant leverages the Globse language dictionary API to create a user interface that streamlines making custom Spanish language vocabulary flash card decks on Anki, the excellent spaced repitition based flash card platform."
       />
-    </div>
+    </section>
   );
 }

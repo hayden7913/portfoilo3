@@ -4,7 +4,6 @@
   display: flex;
   font-size: 3em;
   opacity: .7;
-  margin-top: 20px;
 
   @media only screen and (min-width: 768px) {
     font-size: 3.4em;
@@ -12,6 +11,7 @@
   }
 
   &.divider-projects {
+    margin-top: 20px;
     margin-right: 25px;
 
     @media only screen and (min-width: 768px) {
@@ -19,6 +19,9 @@
     }
   }
 
+  &.divider-about-mobile {
+     @include hide();
+  }
 }
 
 .divider-line {
@@ -28,11 +31,11 @@
   margin-bottom: 15px;
 
   &.divider-line-about {
-    width: 26%;
+    width: 20%;
+  }
 
-    @media only screen and (min-width: 768px) {
-      width: 56%;
-    }
+  &.divider-line-about-mobile {
+    width: 26%;
   }
 }
 
