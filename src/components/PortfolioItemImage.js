@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-export default function PortfolioItemImage({ demoUrl, imgSrc, alt }) {
+export default function PortfolioItemImage({ alt, demoUrl, imgSrc, className }) {
   return (
-    <div className="col6 col-screenshot">
+    <div className={`col6 col-screenshot ${className || ''}`}>
       <a href={demoUrl}>
         <img className="portfolio-screenshot" src={imgSrc} alt={alt}/>
       </a>

@@ -4,6 +4,20 @@
 
 .portfolio-item {
   text-align: left;
+
+  .pomtracker-mockup-sm-screen {
+    @media only screen and (min-width: 768px) {
+      @include hide();
+    }
+  }
+
+  .pomtracker-mockup-lg-screen {
+    @include hide();
+
+    @media only screen and (min-width: 768px) {
+      @include unhide();
+    }
+  }
 }
 
 .portfolio-screenshot {

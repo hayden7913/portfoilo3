@@ -20,6 +20,7 @@ export default function PortfolioItemDescription({
   techIcons,
   title,
 }) {
+
   return (
     <div className="col6 col-description">
       <a className={`portfolio-title theme-color-${itemName}`} href={demoUrl}>
