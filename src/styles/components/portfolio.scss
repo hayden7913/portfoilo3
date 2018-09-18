@@ -1,9 +1,11 @@
 .portfolio-list {
+  padding: 0 20px;
   padding-bottom: 30px;
 }
 
 .portfolio-item {
   text-align: left;
+  font-size: 1em;
 
   .pomtracker-mockup-sm-screen {
     @media only screen and (min-width: 768px) {
@@ -26,20 +28,23 @@
 
 .portfolio-title-text {
   display: inline-block;
+  font-size: 1.7em;
 
   @media only screen and (min-width: 960px) {
     line-height: 1;
     margin: 0;
   }
 }
-
 .portfolio-title-divider {
   margin: 10px 0;
-  border-bottom: 3px solid;
+  border-bottom: 5px solid;
+  width: 80%;
 }
 
 .portfolio-description {
+  font-size: .9em;
   margin-top: 0;
+
 
   @media only screen and (min-width: 960px) {
     margin-top: 15px;

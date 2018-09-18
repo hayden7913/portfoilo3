@@ -22,7 +22,7 @@ export default function PortfolioItemDescription({
 }) {
 
   return (
-    <div className="col6 col-description">
+    <div className="col3 col-description">
       <a className={`portfolio-title theme-color-${itemName}`} href={demoUrl}>
         <h1 className="portfolio-title-text">{title}</h1>
         <div className="portfolio-title-divider"></div>

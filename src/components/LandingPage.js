@@ -41,11 +41,13 @@ class LandingPage extends Component {
           isTop={scrollY === 0}
        />
         <Hero />
-        <Divider name="projects" title="projects" />
-        <Portfolio />
-        <Divider name="about-mobile" title="about me" />
-        <About />
-        <div style={{height: '300px'}}></div>
+        <main>
+          <Divider name="projects" title="projects" />
+          <Portfolio />
+          <Divider name="about-mobile" title="about me" />
+          <About />
+          <div style={{height: '300px'}}></div>
+        </main>
       </Element>
     );
   }
