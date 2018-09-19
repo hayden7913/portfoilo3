@@ -9,7 +9,7 @@ export default function About() {
           <div className="about-image-container"></div>
         </div>
         <div className="col6 col-about-right">
-          <Divider name="about" title="about me" />
+          <Divider name="about" title="about me" topBottom />
           <div className="about-text">
             <p className="about-paragraph">
               I take great joy in finding ways to use programming to make life less tedious and more fun.

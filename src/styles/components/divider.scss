@@ -15,6 +15,10 @@
     padding-right: 15px;
   }
 
+  &.divider-top-bottom {
+    display: block;
+  }
+
   &.divider-projects {
     margin-top: 20px;
     margin-right: 25px;
@@ -29,8 +33,11 @@
   }
 
   &.divider-about {
+    text-align: right;
+
     .divider-title {
       font-size: .8em;
+      padding-bottom: 12px;;
     }
   }
 
@@ -54,7 +61,7 @@
     width: 20%;
 
     @media only screen and (min-width: 768px) {
-      width: 30%;
+      width: 100%;
     }
   }
 
