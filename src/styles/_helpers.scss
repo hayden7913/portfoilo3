@@ -21,20 +21,10 @@
   @extend %root-container;
 }
 
-.nav-container {
-  @extend %root-container;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-  .nav-left {
-    &.is-visible {
-      align-items: center;
-      display: flex;
-      justify-content: initial;
-    }
-  }
+%top-container {
+  padding: 0 100px;
 }
+
 
 .link {
   color: $color-primary;

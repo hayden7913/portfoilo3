@@ -36,6 +36,15 @@
   }
 }
 
+.nav-container {
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+  }
+}
+
 .nav-left, .nav-right {
   border: 1px solid $test-border-color;
 
@@ -54,7 +63,7 @@
   }
 
   &.is-visible {
-    display: inline-block;
+    @include unhide();
   }
 }
 
