@@ -8,19 +8,10 @@
   height: 100%;
   font-weight: 400;
   padding-top: 70vh;
-  font-size: 1.2em;
-  width: 100%;
-
-  @media only screen and (min-width: 700px) {
-    font-size: 1.4em;
-  }
-
-  @media only screen and (min-width : 1024px) {
-    // font-size: 1.5em;
-  }
 }
 
 .hero-headings-wrapper {
+  font-size: 1.2em;
   position: relative;
   max-width: 525px;
 
@@ -29,7 +20,29 @@
   }
 
   @media only screen and (min-width: 700px) {
+    font-size: 1.4em;
     max-width: 575px;
+  }
+
+  @media only screen and (min-width: 800px) {
+    font-size: 1.5em;
+    margin-left: 4%;
+    width: 80%;
+    max-width: 685px;
+  }
+
+  @media only screen and (min-width: 1050px) {
+    font-size: 1.55em;
+    max-width: 725px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.6em;
+    max-width: 775px;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    margin-left: 6%;
   }
 }
 
@@ -47,6 +60,20 @@
 
   @media only screen and (min-width: 550px) {
     width: 200px;
+  }
+
+  @media only screen and (min-width: 800px) {
+    width: 225px;
+  }
+
+  @media only screen and (min-width: 1050px) {
+    width: 250px;
+    bottom: -10;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 275px;
+    bottom: -10;
   }
 }
 
@@ -71,10 +98,6 @@
     padding-right: 20px;
     width: 85%;
   }
-
-  @media only screen and (min-width: 550px) {
-    max-width: 600px;
-  }
 }
 
 .hero-subheading-bar {
@@ -82,7 +105,7 @@
   color: white;
   font-size: .8em;
   margin-top: 15px;
-  opacity: 0.7;
+  opacity: .7;
   padding-top: 5px;
   padding-bottom: 10px;
   padding-right: 30px;
@@ -92,7 +115,11 @@
 
   @media only screen and (min-width : 480px) {
     width: 96%;
-    padding-right: 20px;
+    padding-right: 1.2em;
+  }
+
+  @media only screen and (min-width : 700px) {
+    font-size: .75em;
   }
 }
 
