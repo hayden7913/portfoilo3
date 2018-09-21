@@ -9,7 +9,7 @@
   width: 100%;
   z-index: 1000;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-show-nav) {
     border-bottom: none;
     line-height: 1;
     padding: 15px 0;
@@ -39,18 +39,17 @@
 .nav-left, .nav-right {
   border: 1px solid $test-border-color;
 
-  @media only screen and (min-width: 768px) {
-    display: inline-block;
+  @media only screen and (min-width: $breakpoint-show-nav) {
     width: 50%;
   }
 }
 
 .nav-left {
+  @include hide();
   text-align: left;
-  display: none;
 
-  @media only screen and (min-width: 768px) {
-    display: inline-block;
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    @include unhide();
     font-size: 1.1em;
   }
 
@@ -71,7 +70,7 @@
   transition: all .2s ease-in-out;
   text-decoration: inherit;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-show-nav) {
     display: inline-block;
     margin: 0 10px;
   }
@@ -86,13 +85,13 @@
 }
 
 .nav-menu-icon {
-  font-size: 20px;
+  font-size: 23px;
   opacity: 0.9;
   position: absolute;
   right: 10px;
   top: 18px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-show-nav) {
     @include hide();
   }
 }

@@ -11,31 +11,32 @@
   font-size: 1.2em;
   width: 100%;
 
-  @media only screen and (min-height: 800px) {
-
-  }
-
-  @media only screen and (min-width : 768px) {
-    // background-size: 245%;
-    font-size: 1.3em;
-    padding-top: 710px;
+  @media only screen and (min-width: 700px) {
+    font-size: 1.4em;
   }
 
   @media only screen and (min-width : 1024px) {
-    font-size: 1.5em;
+    // font-size: 1.5em;
   }
 }
 
 .hero-headings-wrapper {
   position: relative;
-  max-width: 700px;
+  max-width: 525px;
+
+  @media only screen and (min-width: 500px) {
+    margin-left: 2%;
+  }
+
+  @media only screen and (min-width: 700px) {
+    max-width: 575px;
+  }
 }
 
 .hero-headshot {
   bottom: -9999px;
   left: -9999px;
   position: absolute;
-  width: 245px;
   z-index: 100;
 
   @media only screen and (min-width : 480px) {
@@ -44,10 +45,8 @@
     width: 170px;
   }
 
-  @media only screen and (min-width : 768px) {
-    bottom: 40px;
-    left: 33px;
-    width: 20%;
+  @media only screen and (min-width: 550px) {
+    width: 200px;
   }
 }
 
@@ -55,10 +54,6 @@
 .hero-heading-bar-wrapper {
   @media only screen and (min-width : 480px) {
     margin-left: 100px;
-  }
-
-  @media only screen and (min-width : 768px) {
-    margin-left: 200px;
   }
 }
 
@@ -69,7 +64,7 @@
   padding-top: 10px;
   padding-bottom: 0.2em;
   padding-right: 1.2em;
-  width: 43%;
+  width: 80%;
   text-align: right;
 
   @media only screen and (min-width : 480px) {
@@ -77,8 +72,8 @@
     width: 85%;
   }
 
-  @media only screen and (min-width : 768px) {
-    width: 62%;
+  @media only screen and (min-width: 550px) {
+    max-width: 600px;
   }
 }
 
@@ -99,12 +94,6 @@
     width: 96%;
     padding-right: 20px;
   }
-
-  @media only screen and (min-width : 768px) {
-    top: 60px;
-    width: 73%;
-  }
-
 }
 
 .hero-subheading-location {
