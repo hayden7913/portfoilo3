@@ -24,6 +24,8 @@
 
 @mixin unhide() {
   position: static !important;
+  top: 0;
+  left: 0;
 }
 
 @mixin respond-to($media) {

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default function Divider({ name, title, topBottom }) {
-  console.log(topBottom, name);
-
   return (
     !topBottom === true
     ? <Element name={name}>
