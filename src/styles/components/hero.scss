@@ -1,5 +1,4 @@
 .hero-section {
-  border: 1px solid #000;
   background-image: url(https://cdn-files.apstatic.com/climb/106190995_large_1494086790.jpg);
   // background-image: url('/images/lovers-leap-background.png');
   background-position: 74% 0%;
@@ -28,23 +27,21 @@
 }
 
 .hero-headings-wrapper {
-  border: 1px solid white;
   position: relative;
-  height: 150px;
   max-width: 700px;
 }
 
 .hero-headshot {
   bottom: -9999px;
   left: -9999px;
-  // position: absolute;
+  position: absolute;
   width: 245px;
   z-index: 100;
 
   @media only screen and (min-width : 480px) {
-    bottom: 60px;
-    left: 15px;
-    width: 40%;
+    left: 0;
+    bottom: -3;
+    width: 170px;
   }
 
   @media only screen and (min-width : 768px) {
@@ -56,8 +53,8 @@
 
 
 .hero-heading-bar-wrapper {
-  @media only screen and (min-width : 468px) {
-    margin-left: 50px;
+  @media only screen and (min-width : 480px) {
+    margin-left: 100px;
   }
 
   @media only screen and (min-width : 768px) {
@@ -71,11 +68,14 @@
   opacity: 0.7;
   padding-top: 10px;
   padding-bottom: 0.2em;
-  position: absolute;
-  top: 0;
   padding-right: 1.2em;
-  width: 270px;
+  width: 43%;
   text-align: right;
+
+  @media only screen and (min-width : 480px) {
+    padding-right: 20px;
+    width: 85%;
+  }
 
   @media only screen and (min-width : 768px) {
     width: 62%;
@@ -86,15 +86,19 @@
   background-color: black;
   color: white;
   font-size: .8em;
+  margin-top: 15px;
   opacity: 0.7;
   padding-top: 5px;
   padding-bottom: 10px;
   padding-right: 30px;
   padding-left: 1.5em;
-  position: absolute;
-  top: 48px;
   width: 83%;
   text-align: right;
+
+  @media only screen and (min-width : 480px) {
+    width: 96%;
+    padding-right: 20px;
+  }
 
   @media only screen and (min-width : 768px) {
     top: 60px;
