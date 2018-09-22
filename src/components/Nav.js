@@ -51,6 +51,7 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
           </Link>
           <Link className={menuItemClass}
             duration={500}
+            offset={-75}
             smooth
             spy
             to="projects"
@@ -59,6 +60,7 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
           </Link>
           <Link className={menuItemClass}
             duration={500}
+            offset={-75}
             smooth
             spy
             to="about"
