@@ -5,7 +5,7 @@ import PortfolioItemImage from './PortfolioItemImage';
 
 export default function Portfolio() {
   return (
-    <section className="portfolio-list">
+    <section className="portfolio-section">
       <div className="row portfolio-row">
         <div className="portfolio-item" >
           <PortfolioItemImage

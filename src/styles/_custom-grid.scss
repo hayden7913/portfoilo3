@@ -1,6 +1,12 @@
 .col-description {
-  padding: 0 45px;
-  padding-top: 60px;
+  padding: 0 20px;
+
+
+  @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
+    padding-top: 30px;
+  }
+
+  // padding-top: 60px;
 
   // @media only screen and (min-width: 960px) {
   //   padding-left: 50px;
@@ -30,6 +36,10 @@
     // padding-left: 30px;
     width: 50%;
   }
+}
+
+.col-screenshot {
+  text-align: center;
 }
 
 .portfolio-row {

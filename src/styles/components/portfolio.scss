@@ -1,14 +1,18 @@
-.portfolio-list {
-  padding: 0 20px;
+
+.portfolio-section {
   padding-bottom: 30px;
+
+  @media only screen and (min-width: 700px) {
+    padding: 0 20px;
+  }
 }
 
 .portfolio-item {
   text-align: left;
-  font-size: 0.8em;
+  font-size: 1em;
 
   .pomtracker-mockup-sm-screen {
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
       @include hide();
     }
   }
@@ -16,7 +20,7 @@
   .pomtracker-mockup-lg-screen {
     @include hide();
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
       @include unhide();
     }
   }
@@ -26,27 +30,37 @@
   max-width: 100%;
 }
 
+.portfolio-description-wrapper {
+  @media only screen and (min-width: 750px) and (max-width: $breakpoint-horizontal-col-layout) {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
 .portfolio-title-text {
   display: inline-block;
-  font-size: 1.7em;
+  font-size: 1.5em;
 
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
     line-height: 1;
     margin: 0;
+    margin-bottom: 15px;
   }
 }
 .portfolio-title-divider {
-  margin: 10px 0;
-  border-bottom: 5px solid;
-  width: 80%;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid;
+  width: 100%;
 }
 
 .portfolio-description {
-  font-size: .9em;
+  font-size: 1em;
   margin-top: 0;
 
 
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
+    font-size: .9em;
     margin-top: 15px;
   }
 }

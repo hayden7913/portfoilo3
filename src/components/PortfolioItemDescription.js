@@ -23,17 +23,19 @@ export default function PortfolioItemDescription({
 
   return (
     <div className="col3 col-description">
-      <a className={`portfolio-title theme-color-${itemName}`} href={demoUrl}>
-        <h1 className="portfolio-title-text">{title}</h1>
-        <div className="portfolio-title-divider"></div>
-      </a>
-      <p className="portfolio-description">{description}</p>
-      <div className="portfolio-tech-icons">
-        {renderTechIcons(techIcons)}
+      <div className="portfolio-description-wrapper">
+        <a className={`portfolio-title theme-color-${itemName}`} href={demoUrl}>
+          <h1 className="portfolio-title-text">{title}</h1>
+          <div className="portfolio-title-divider"></div>
+        </a>
+        <p className="portfolio-description">{description}</p>
+        <div className="portfolio-tech-icons">
+          {renderTechIcons(techIcons)}
+        </div>
+        <a className="portfolio-link" href={repoUrl}>Repo</a>
+        <span className={`theme-color-${itemName}`}> | </span>
+        <a className="portfolio-link" href={demoUrl}>Demo</a>
       </div>
-      <a className="portfolio-link" href={repoUrl}>Repo</a>
-      <span className={`theme-color-${itemName}`}> | </span>
-      <a className="portfolio-link" href={demoUrl}>Demo</a>
     </div>
   );
 }

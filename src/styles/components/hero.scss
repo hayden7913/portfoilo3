@@ -1,7 +1,8 @@
 .hero-section {
+  @extend %top-container;
   background-image: url(https://cdn-files.apstatic.com/climb/106190995_large_1494086790.jpg);
   // background-image: url('/images/lovers-leap-background.png');
-  background-position: 74% 0%;
+  background-position: 74% 0;
   background-repeat: no-repeat;
   // background-size: 410%;
   background-size: cover;
@@ -15,9 +16,6 @@
   position: relative;
   max-width: 525px;
 
-  @media only screen and (min-width: 500px) {
-    margin-left: 2%;
-  }
 
   @media only screen and (min-width: 700px) {
     font-size: 1.4em;
@@ -26,7 +24,6 @@
 
   @media only screen and (min-width: 800px) {
     font-size: 1.5em;
-    margin-left: 4%;
     width: 80%;
     max-width: 685px;
   }
@@ -41,13 +38,11 @@
     max-width: 775px;
   }
 
-  @media only screen and (min-width: 1300px) {
-    margin-left: 6%;
+  @media only screen and (min-width: 1400px) {
+    background-position: 100% 0;
   }
 
-  @media only screen and (min-width: 1400px) {
-    margin-left: 6%;
-  }
+
 }
 
 .hero-headshot {

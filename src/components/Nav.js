@@ -17,26 +17,31 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
   const menuIconClass = classNames('nav-menu-icon', {
     'icon-menu': areLinksHidden,
     'icon-close': !areLinksHidden,
+    'not-top': !isTop,
   });
 
-  const aboutLinkClass = classNames('nav-menu-item', {
-    'is-active': currentRoute === '/',
+  const menuItemClass = classNames('nav-menu-item', {
+    'not-top': !isTop,
   });
 
-  const portfolioLinkClass = classNames('nav-menu-item', {
-    'is-active': currentRoute === '/portfolio',
-  });
-
-  const contactLinkClass = classNames('nav-menu-item', {
-    'is-active': currentRoute === '/contact',
-  });
+  // const aboutLinkClass = classNames('nav-menu-item', {
+  //   'is-active': currentRoute === '/',
+  // });
+  //
+  // const portfolioLinkClass = classNames('nav-menu-item', {
+  //   'is-active': currentRoute === '/portfolio',
+  // });
+  //
+  // const contactLinkClass = classNames('nav-menu-item', {
+  //   'is-active': currentRoute === '/contact',
+  // });
 
   return (
     <nav className={navClass}>
       <div className="nav-container">
         <div className={navLeftClass}>
           <Link
-            className={aboutLinkClass}
+            className={menuItemClass}
             duration={500}
             smooth
             spy
@@ -44,7 +49,7 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
           >
             HOME
           </Link>
-          <Link className={portfolioLinkClass}
+          <Link className={menuItemClass}
             duration={500}
             smooth
             spy
@@ -52,7 +57,7 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
           >
             PROJECTS
           </Link>
-          <Link className={contactLinkClass}
+          <Link className={menuItemClass}
             duration={500}
             smooth
             spy
