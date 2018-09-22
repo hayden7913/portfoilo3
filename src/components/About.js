@@ -18,17 +18,17 @@ export default function About() {
             </p>
             <span className="about-contact-wrapper">
               <span className="about-contact-message">Shoot me an email</span>
-              <a className="about-contact-link link" href="mailto:hayden321@gmail.com">hayden321@gmail.com</a>
+              <a className="about-email-link link" href="mailto:hayden321@gmail.com">hayden321@gmail.com</a>
             </span>
             <div className="contact">
               <div className="contact-links">
-                <a className="contact-link icon-github" href="https://github.com/hayden7913"></a>
+                <a className="about-contact-link icon-github" href="https://github.com/hayden7913"></a>
                 <a
-                  className="contact-link icon-linkedin"
+                  className="about-contact-link icon-linkedin"
                   href="https://www.linkedin.com/in/hayden-harkwright-2588b254"
                   >
                   </a>
-                  <a className="contact-link icon-mail" href="mailto:hayden321@gmail.com"></a>
+                  <a className="about-contact-link icon-mail" href="mailto:hayden321@gmail.com"></a>
                 </div>
               </div>
           </div>

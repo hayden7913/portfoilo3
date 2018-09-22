@@ -4,6 +4,14 @@
   line-height: 2;
 }
 
+%contact-link {
+  color: $grey-super-dark;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
 .contact-links {
   font-size: .9em;
 
@@ -17,17 +25,7 @@
   }
 }
 
-.contact-link {
-  color: $grey-super-dark;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.5em;
-  margin-right: 15px;
 
-  &:hover {
-    color: black;
-  }
-}
 
 .contact-footer {
   bottom: 0;

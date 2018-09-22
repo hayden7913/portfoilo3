@@ -69,7 +69,7 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
           </Link>
         </div>
         <div className="nav-right">
-          <ContactLinks className="nav-contact-links" />
+          <ContactLinks alias="nav" isTop={isTop} />
           <span className={menuIconClass} onClick={onMenuClick}></span>
         </div>
       </div>

@@ -75,7 +75,11 @@
   }
 }
 
-.about-contact-link {
+.about-email-link {
   display: block;
   margin-bottom: 22px;
+}
+
+.about-contact-link {
+  @extend %contact-link;
 }
