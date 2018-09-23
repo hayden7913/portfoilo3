@@ -2,7 +2,7 @@
   padding: 0 20px;
 
 
-  @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
+  @media only screen and (min-width: $breakpoint-grid-layout) {
     padding-top: 30px;
   }
 
@@ -42,10 +42,38 @@
   text-align: center;
 }
 
-.portfolio-row {
-  padding-top: 50px;
+$row-spacing-sm-screen: 75;
+$row-spacing-med-screen: 110;
+$row-spacing-lg-screen: 150;
 
-  @media only screen and (min-width: 960px) {
-    padding: 100px 0;
+.portfolio-row {
+  padding-bottom: $row-spacing-sm-screen * 1px;
+
+  @media only screen and (min-width: 1100px) {
+    padding-bottom: $row-spacing-med-screen * 1px;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    padding-bottom: $row-spacing-med-screen * 1px;
+  }
+
+  &.pcb-flow-row {
+    @media only screen and (min-width: 500px) and (max-width: 1099px) {
+      padding-bottom: $row-spacing-sm-screen * .75 * 1px;
+    }
+
+    @media only screen and (min-width: 1100px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
+      padding-bottom: $row-spacing-med-screen * .55 * 1px;
+    }
+  }
+
+  &.pomtracker-row {
+    @media only screen and (min-width: $breakpoint-grid-layout) {
+      padding-bottom: $row-spacing-med-screen * 1.1 * 1px;
+    }
+
+    @media only screen and (min-width: 1300px) {
+      padding-bottom: $row-spacing-lg-screen * 1.2 * 1px;
+    }
   }
 }

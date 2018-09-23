@@ -15,7 +15,7 @@ const renderTechIcons = techIcons => (
 export default function PortfolioItemDescription({
   demoUrl,
   description,
-  itemName,
+  alias,
   repoUrl,
   techIcons,
   title,
@@ -23,8 +23,8 @@ export default function PortfolioItemDescription({
 
   return (
     <div className="col3 col-description">
-      <div className="portfolio-description-wrapper">
-        <a className={`portfolio-title theme-color-${itemName}`} href={demoUrl}>
+      <div className={`portfolio-description-wrapper ${alias}-description-wrapper`}>
+        <a className={`portfolio-title theme-color-${alias}`} href={demoUrl}>
           <h1 className="portfolio-title-text">{title}</h1>
           <div className="portfolio-title-divider"></div>
         </a>
@@ -33,7 +33,7 @@ export default function PortfolioItemDescription({
           {renderTechIcons(techIcons)}
         </div>
         <a className="portfolio-link" href={repoUrl}>Repo</a>
-        <span className={`theme-color-${itemName}`}> | </span>
+        <span className={`theme-color-${alias}`}> | </span>
         <a className="portfolio-link" href={demoUrl}>Demo</a>
       </div>
     </div>

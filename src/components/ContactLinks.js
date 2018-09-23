@@ -2,7 +2,6 @@ import React from 'react';
 import classNames from 'classnames';
 
 export default function ContactLinks({ alias, isTop }) {
-  console.log(isTop);
   const contactLinkBaseClass = classNames(
     'contact-link',
     `${alias}-contact-link`, {

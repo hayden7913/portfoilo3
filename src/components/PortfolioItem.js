@@ -12,7 +12,7 @@ export default function PortfolioItem({
   className,
   demoUrl,
   imgSrc,
-  itemName,
+  alias,
   portfolioItem,
   repoUrl,
   title,
@@ -32,7 +32,7 @@ export default function PortfolioItem({
         <PortfolioItemDescription
           demoUrl={demoUrl}
           description={description}
-          itemName={itemName}
+          alias={alias}
           repoUrl={repoUrl}
           techIcons={techIcons}
           title={title}

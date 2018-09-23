@@ -1,6 +1,8 @@
 
 .portfolio-section {
   padding-bottom: 30px;
+  margin: 0 auto;
+  max-width: 1350px;
 
   @media only screen and (min-width: 700px) {
     padding: 0 20px;
@@ -12,7 +14,7 @@
   font-size: 1em;
 
   .pomtracker-mockup-sm-screen {
-    @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
+    @media only screen and (min-width: $breakpoint-grid-layout) {
       @include hide();
     }
   }
@@ -20,7 +22,7 @@
   .pomtracker-mockup-lg-screen {
     @include hide();
 
-    @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
+    @media only screen and (min-width: $breakpoint-grid-layout) {
       @include unhide();
     }
   }
@@ -31,9 +33,38 @@
 }
 
 .portfolio-description-wrapper {
-  @media only screen and (min-width: 750px) and (max-width: $breakpoint-horizontal-col-layout) {
+  @media only screen and (min-width: 500px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
+
+    &.pcb-flow-description-wrapper {
+      padding-top: 0;
+    }
+  }
+
+  @media only screen and (min-width: 750px) and (max-width: 999px) {
     margin: 0 auto;
     width: 90%;
+  }
+
+  @media only screen and (min-width: 1000px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  @media only screen and (min-width: $breakpoint-grid-layout) {
+    padding-top: 25px;
+    max-width: 390px;
+  }
+}
+
+.pomtracker-description-wrapper {
+  @media only screen and (min-width: $breakpoint-grid-layout) {
+    padding-top: 60px;
+  }
+}
+
+.pomtracker-description-wrapper, .anki-assistant-description-wrapper {
+  @media only screen and (min-width: 500px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
+    padding-top: 20px;
   }
 }
 
@@ -41,7 +72,7 @@
   display: inline-block;
   font-size: 1.5em;
 
-  @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
+  @media only screen and (min-width: $breakpoint-grid-layout) {
     line-height: 1;
     margin: 0;
     margin-bottom: 15px;
@@ -59,7 +90,7 @@
   margin-top: 0;
 
 
-  @media only screen and (min-width: $breakpoint-horizontal-col-layout) {
+  @media only screen and (min-width: $breakpoint-grid-layout) {
     font-size: .9em;
     margin-top: 15px;
   }

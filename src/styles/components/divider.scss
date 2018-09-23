@@ -1,8 +1,8 @@
 .divider {
-  font-weight: 300;
   color: $grey-medium;
   display: flex;
   font-size: 3em;
+  font-weight: 300;
   opacity: .7;
 
   @media only screen and (min-width: 768px) {
@@ -22,9 +22,14 @@
   &.divider-projects {
     margin-top: 20px;
     margin-right: 25px;
+    margin-bottom: 40px;
 
-    @media only screen and (min-width: 768px) {
-      margin-right: 30px;
+    @media only screen and (min-width: 1100px) {
+      margin-bottom: 60px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      margin-bottom: 75px;
     }
 
     .divider-title {
