@@ -21,20 +21,23 @@
 
   &.has-background {
     background-color: black;
-    border-bottom: 2px solid $black-faded;
-    color: $black-faded;
+    border-bottom: 1px solid $black-faded;
+    color: $grey-super-light;
     opacity: .8;
     transition: background-color .5s ease;
     transition: all .5s ease;
   }
 
   &.is-active {
-    background-color: white;
-    border-bottom: 1px solid #f7f8f8;
-    box-shadow: 0 0 50px -10px rgba(0,31,48,.2);
-    font-weight: 400;
-    opacity: .9;
-    padding-top: 20px;
+    @media only screen and (max-width: $breakpoint-show-nav) {
+      background-color: white;
+      color: $black-faded;
+      border-bottom: 1px solid #f7f8f8;
+      box-shadow: 0 0 50px -10px rgba(0,31,48,.2);
+      font-weight: 400;
+      opacity: .9;
+      padding-top: 20px;
+    }
   }
 }
 
@@ -92,7 +95,11 @@
     transition: none;
 
     &.not-top {
-      color: white;
+      color: black;
+
+      @media only screen and (min-width: $breakpoint-show-nav) {
+        color: white;
+      }
     }
   }
 
