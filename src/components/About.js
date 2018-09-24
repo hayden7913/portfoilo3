@@ -3,13 +3,13 @@ import Divider from './Divider';
 
 export default function About() {
   return (
-      <section className="row about-section">
+      <section name="about" className="row about-section">
         <div className="col6 col-about col-about-left">
           <img className="about-image" src="/images/rock-hand-circle.png" alt="climbing photo"/>
           <div className="about-image-container"></div>
         </div>
         <div className="col6 col-about-right">
-          <Divider alias="about" title="about me" topBottom />
+          <Divider alias="about" name="about" title="about me" topBottom />
           <div className="about-text">
             <p className="about-paragraph">
               I take great joy in finding ways to use programming to make life less tedious and more fun.

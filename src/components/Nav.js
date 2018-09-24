@@ -4,7 +4,12 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 import ContactLinks from './ContactLinks';
 import Portfolio from './Portfolio';
 
-export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }) {
+export default function Nav({
+  areLinksHidden,
+  isTop,
+  toggleMenu,
+  onMenuClick,
+ }) {
   const navClass = classNames('nav', {
     'is-active': !areLinksHidden,
     'has-background': !isTop,
@@ -43,6 +48,7 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
           <Link
             className={menuItemClass}
             duration={500}
+            onClick={toggleMenu}
             smooth
             spy
             to="home"
@@ -51,19 +57,21 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
           </Link>
           <Link className={menuItemClass}
             duration={500}
-            offset={-75}
+            offset={-165}
+            onClick={toggleMenu}
             smooth
             spy
-            to="project-divider"
+            to="portfolio"
           >
             PROJECTS
           </Link>
           <Link className={menuItemClass}
             duration={500}
-            offset={-75}
+            offset={-225}
+            onClick={toggleMenu}
             smooth
             spy
-            to="about-divider"
+            to="about"
           >
             ABOUT
           </Link>

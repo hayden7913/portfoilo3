@@ -5,7 +5,7 @@ import PortfolioItemImage from './PortfolioItemImage';
 
 export default function Portfolio() {
   return (
-    <section className="portfolio-section">
+    <section className="portfolio-section" name="portfolio">
       <div className="row portfolio-row pcb-flow-row">
         <div className="portfolio-item" >
           <PortfolioItemImage
@@ -45,7 +45,7 @@ export default function Portfolio() {
           />
         </div>
       </div>
-      <div className="row portfolio-row">
+      <div className="row portfolio-row anki-assistant-row">
         <div className="portfolio-item" >
           <PortfolioItemImage
             alt="portfolio demo item"

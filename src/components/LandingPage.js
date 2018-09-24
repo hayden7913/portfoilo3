@@ -25,7 +25,10 @@ class LandingPage extends Component {
 
   toggleNavLinks = () => {
     const { areLinksHidden } = this.state;
-    this.setState({ areLinksHidden: !areLinksHidden});
+
+    setTimeout(() =>{
+      this.setState({ areLinksHidden: !areLinksHidden});
+    }, 0);
   }
 
   render() {
@@ -38,13 +41,14 @@ class LandingPage extends Component {
           areLinksHidden={areLinksHidden}
           currentRoute={pathname}
           onMenuClick={this.toggleNavLinks}
+          toggleMenu={this.toggleNavLinks}
           isTop={scrollY === 0}
        />
         <Hero />
         <main>
-          <Divider alias="projects" title="projects" />
+          <Divider  alias="projects" name="projects" title="projects" />
           <Portfolio />
-          <Divider alias="about-mobile" title="about me" topBottom />
+          <Divider alias="about-mobile" name="about" title="about me" topBottom />
           <About />
           <div style={{height: '300px'}}></div>
         </main>

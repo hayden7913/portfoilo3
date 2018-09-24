@@ -21,9 +21,11 @@
 
   &.has-background {
     background-color: black;
-    color: $grey-light;
+    border-bottom: 2px solid $black-faded;
+    color: $black-faded;
     opacity: .8;
     transition: background-color .5s ease;
+    transition: all .5s ease;
   }
 
   &.is-active {
@@ -31,7 +33,6 @@
     border-bottom: 1px solid #f7f8f8;
     box-shadow: 0 0 50px -10px rgba(0,31,48,.2);
     font-weight: 400;
-    height: 125px;
     opacity: .9;
     padding-top: 20px;
   }
@@ -119,12 +120,16 @@
   right: 10px;
   top: 14px;
 
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    @include hide();
+  }
+
   &.not-top {
     color: $grey-medium;
   }
 
-  @media only screen and (min-width: $breakpoint-show-nav) {
-    @include hide();
+  &:hover {
+    cursor: pointer;
   }
 }
 
