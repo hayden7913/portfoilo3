@@ -1,6 +1,4 @@
 .about-section {
-  padding-top: 900px;
-  border: none;
   text-align: center;
 
   @media only screen and (min-width: 768px) {
@@ -54,7 +52,7 @@
 }
 
 .about-paragraph, .about-contact-wrapper {
-  font-size: .8em;
+  font-size: 1em;
   max-width: 100%;
   text-align: left;
   width: 850px;

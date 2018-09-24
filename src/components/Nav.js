@@ -54,7 +54,7 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
             offset={-75}
             smooth
             spy
-            to="projects"
+            to="project-divider"
           >
             PROJECTS
           </Link>
@@ -63,7 +63,7 @@ export default function Nav({ areLinksHidden, currentRoute, isTop, onMenuClick }
             offset={-75}
             smooth
             spy
-            to="about"
+            to="about-divider"
           >
             ABOUT
           </Link>

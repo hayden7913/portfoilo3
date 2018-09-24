@@ -42,9 +42,9 @@ class LandingPage extends Component {
        />
         <Hero />
         <main>
-          <Divider name="projects" title="projects" />
+          <Divider alias="projects" title="projects" />
           <Portfolio />
-          <Divider name="about-mobile" title="about me" topBottom />
+          <Divider alias="about-mobile" title="about me" topBottom />
           <About />
           <div style={{height: '300px'}}></div>
         </main>
