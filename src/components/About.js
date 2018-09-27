@@ -8,7 +8,7 @@ export default function About() {
           <img className="about-image" src="/images/rock-hand-circle.png" alt="climbing photo"/>
           <div className="about-image-container"></div>
         </div>
-        <div className="col6 col-about-right">
+        <div className="col6 col-about col-about-right">
           <Divider alias="about" name="about" title="about me" topBottom />
           <div className="about-text">
             <p className="about-paragraph">

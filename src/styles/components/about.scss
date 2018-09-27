@@ -1,24 +1,19 @@
 .about-section {
+  border: none;
+  max-width: none;
   text-align: center;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
     margin-top: 10%;
     padding-left: 0;
   }
 
-  @media only screen and (min-width: 1224px) {
-    max-width: 90%;
-  }
-
-  @media only screen and (min-width: 1440px) {
-    max-width: 90%;
-  }
 }
 
 .about-image {
   width: 200px;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $breakpoint-swap-about-image) {
      @include hide();
   }
 }
@@ -26,7 +21,7 @@
 .about-image-container {
   @include hide();
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
     @include unhide();
       background-image: url(/images/rock-hand.png);
       background-repeat: no-repeat;
@@ -34,15 +29,29 @@
       height: 50%;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
       height: 70%;
+  }
+
+  @media only screen and (min-width: 1000px) {
+      height: 80%;
+  }
+
+  @media only screen and (min-width: 1200px) {
+      background-position: 0 30%;
+      height: 85%;
+  }
+
+  @media only screen and (min-width: 1200px) {
+      background-position: 0 30%;
+      height: 85%;
   }
 }
 
 .about-heading {
   font-size: 1.85em;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
     font-size: 2.6em;
   }
 }
@@ -53,19 +62,31 @@
   text-align: left;
   width: 850px;
 
-  @media only screen and (min-width: 1224px) {
+}
+
+.about-paragraph {
+  @media only screen and (min-width: 1100px) {
+    max-width: 90%;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    max-width: 85%;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    max-width: 80%;
   }
 }
 
 .about-text {
-  padding: 0 20px;
+  padding: 5% 8%;
 }
 
 .about-contact-message {
   display: block;
   margin-bottom: 8px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
     margin-right: 5px;
   }
 }

@@ -16,7 +16,8 @@
 }
 
 .col-about {
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
+    border: none;
     width: 50%;
   }
 }
@@ -24,19 +25,28 @@
 .col-about-left {
   text-align: center;
 
-  @media only screen and (min-width: 768px) {
-    border: none;
+  @media only screen and (min-width: $breakpoint-swap-about-image) {
     padding-left: 0;
     width: 50%;
+  }
+
+  @media only screen and (min-width: 900px) {
+    width: 40%;
   }
 }
 
 .col-about-right {
-  @media only screen and (min-width: 768px) {
-    // padding-left: 30px;
-    width: 50%;
+  @media only screen and (min-width: 900px) {
+    width: 60%;
   }
 }
+
+// .col-about-right {
+  // @media only screen and (min-width: 768px) {
+    // padding-left: 30px;
+    // width: 50%;
+  // }
+// }
 
 .col-screenshot {
   text-align: center;
