@@ -20,6 +20,7 @@
 
 .about-image-container {
   @include hide();
+  max-width: 560px;
 
   @media only screen and (min-width: $breakpoint-swap-about-image) {
     @include unhide();
@@ -94,6 +95,11 @@
 .about-email-link {
   display: block;
   margin-bottom: 22px;
+
+  &:hover {
+    color: $teal-super-light;
+    transition: color .3s ease-in-out;
+  }
 }
 
 .about-contact-link {
