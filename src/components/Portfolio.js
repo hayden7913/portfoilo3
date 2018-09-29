@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import Divider from './Divider';
 import PortfolioItem from './PortfolioItem';
 import PortfolioItemDescription from './PortfolioItemDescription';
 import PortfolioItemImage from './PortfolioItemImage';
 
 export default function Portfolio() {
   return (
-    <section className="portfolio-section" name="portfolio">
+    <section name="projects-section" className="portfolio-section" >
+      <Divider  alias="projects" name="projects" title="projects" />
       <div className="row portfolio-row pcb-flow-row">
         <div className="portfolio-item" >
           <PortfolioItemImage
@@ -22,7 +24,7 @@ export default function Portfolio() {
           />
         </div>
       </div>
-      <div className="row portfolio-row pomtracker-row">
+      <div  className="row portfolio-row pomtracker-row">
         <div className="portfolio-item" >
           <PortfolioItemImage
             alt="portfolio demo item"

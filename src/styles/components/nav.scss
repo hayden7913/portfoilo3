@@ -29,7 +29,7 @@
   }
 
   &.is-active {
-    @media only screen and (max-width: $breakpoint-show-nav) {
+    @media only screen and (max-width: $breakpoint-show-nav-less-one) {
       background-color: white;
       color: $black-faded;
       border-bottom: 1px solid #f7f8f8;

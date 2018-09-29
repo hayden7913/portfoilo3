@@ -7,8 +7,9 @@ import Portfolio from './Portfolio';
 export default function Nav({
   areLinksHidden,
   isTop,
-  toggleMenu,
   onMenuClick,
+  toggleMenu,
+  windowWidth,
  }) {
   const navClass = classNames('nav', {
     'is-active': !areLinksHidden,
@@ -57,11 +58,11 @@ export default function Nav({
           </Link>
           <Link className={menuItemClass}
             duration={500}
-            offset={-165}
+            offset={-70}
             onClick={toggleMenu}
             smooth
             spy
-            to="portfolio"
+            to="projects-section"
           >
             PROJECTS
           </Link>

@@ -14,10 +14,15 @@ class LandingPage extends Component {
     this.state = {
       areLinksHidden: true,
       scrollY: 0,
+      windowWidth: window.innerWidth,
     };
   }
 
   componentDidMount() {
+    window.addEventListener('resize', () => (
+      this.setState({ windowWidth: window.innerWidth }, () => console.log(this.state.windowWidth))
+    ));
+
     window.addEventListener('scroll', () => {
       this.setState({ scrollY: window.scrollY });
     });
@@ -41,12 +46,12 @@ class LandingPage extends Component {
           areLinksHidden={areLinksHidden}
           currentRoute={pathname}
           onMenuClick={this.toggleNavLinks}
+          windowWidth={this.state.windowWidth}
           toggleMenu={this.toggleNavLinks}
           isTop={scrollY === 0}
        />
         <Hero />
         <main>
-          <Divider  alias="projects" name="projects" title="projects" />
           <Portfolio />
           <Divider alias="about-mobile" name="about" title="about me" topBottom />
           <About />
