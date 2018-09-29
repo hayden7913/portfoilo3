@@ -1,4 +1,4 @@
-.portfolio-section {
+.project-section {
   margin: 0 auto;
   max-width: 1450px;
 
@@ -7,7 +7,7 @@
   }
 }
 
-.portfolio-item {
+.project-item {
   text-align: left;
   font-size: 1em;
 
@@ -26,11 +26,11 @@
   }
 }
 
-.portfolio-screenshot {
+.project-screenshot {
   max-width: 100%;
 }
 
-.portfolio-description-wrapper {
+.project-description-wrapper {
   @media only screen and (min-width: 500px) and (max-width: ($breakpoint-grid-layout-value - 1) * 1px) {
 
     &.pcb-flow-description-wrapper {
@@ -66,7 +66,7 @@
   }
 }
 
-.portfolio-title-text {
+.project-title-text {
   display: inline-block;
   font-size: 1.5em;
 
@@ -76,14 +76,14 @@
     margin-bottom: 15px;
   }
 }
-.portfolio-title-divider {
+.project-title-divider {
   margin-top: 3px;
   margin-bottom: 10px;
   border-bottom: 4px solid;
   width: 100%;
 }
 
-.portfolio-description {
+.project-description {
   font-size: 1em;
   margin-top: 0;
 
@@ -93,12 +93,12 @@
   }
 }
 
-.portfolio-tech-icons {
+.project-tech-icons {
   font-size: 1.2em;
   margin: 16px 0;
 }
 
-.portfolio-tech-icon {
+.project-tech-icon {
   margin-right: 5px;
 
   &:hover {
@@ -106,7 +106,7 @@
   }
 }
 
-.portfolio-link {
+.project-link {
   font-weight: 600;
 
   &:hover {
@@ -114,19 +114,19 @@
   }
 }
 
-// .portfolio-app-link {
+// .project-app-link {
 //   // border: 1px solid $test-border-color;
 //   display: block;
 //   margin: 50px 0;
 //   width: 100%;
 // }
 //
-// .portfolio-app-screenshot-container {
+// .project-app-screenshot-container {
 //   margin: 0 auto;
 //   width: 75%;
 // }
 //
-// .portfolio-app-screenshot {
+// .project-app-screenshot {
 //   border: 1px solid $grey-light;
 //   max-width: 100%;
 // }

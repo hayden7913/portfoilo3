@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Portfolio from './Portfolio';
-import PortfolioItemDescription from './PortfolioItemDescription';
-import PortfolioItemImage from './PortfolioItemImage';
+import ProjectItemDescription from './ProjectItemDescription';
+import ProjectItemImage from './ProjectItemImage';
 import Routes from '../routes';
 
 
-export default function PortfolioItem({
+export default function ProjectItem({
   alt,
   className,
   demoUrl,
   imgSrc,
   alias,
-  portfolioItem,
+  projectItem,
   repoUrl,
   title,
   titleColor,
@@ -22,14 +21,14 @@ export default function PortfolioItem({
 }) {
 
   return (
-    <div className="row portfolio-row">
-      <div className="portfolio-item" >
-        <PortfolioItemImage
+    <div className="row project-row">
+      <div className="project-item" >
+        <ProjectItemImage
             demoUrl={demoUrl}
             imgSrc={imgSrc}
             alt={alt}
         />
-        <PortfolioItemDescription
+        <ProjectItemDescription
           demoUrl={demoUrl}
           description={description}
           alias={alias}

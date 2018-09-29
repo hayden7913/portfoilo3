@@ -5,7 +5,7 @@ import About from './About';
 import Divider from './Divider';
 import Hero from './Hero';
 import Nav from './Nav';
-import Portfolio from './Portfolio';
+import Projects from './Projects';
 
 class LandingPage extends Component {
   constructor() {
@@ -52,7 +52,7 @@ class LandingPage extends Component {
         <Hero />
         <Divider  alias="projects" name="projects" title="projects" />
         <main>
-          <Portfolio />
+          <Projects />
           <Divider alias="about-mobile" name="about" title="about me" topBottom />
           <About />
           <div style={{height: '300px'}}></div>

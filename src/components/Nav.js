@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import ContactLinks from './ContactLinks';
-import Portfolio from './Portfolio';
+import Projects from './Projects';
 
 export default function Nav({
   areLinksHidden,
@@ -34,8 +34,8 @@ export default function Nav({
   //   'is-active': currentRoute === '/',
   // });
   //
-  // const portfolioLinkClass = classNames('nav-menu-item', {
-  //   'is-active': currentRoute === '/portfolio',
+  // const projectLinkClass = classNames('nav-menu-item', {
+  //   'is-active': currentRoute === '/project',
   // });
   //
   // const contactLinkClass = classNames('nav-menu-item', {

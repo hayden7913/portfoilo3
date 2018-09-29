@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import Divider from './Divider';
-import PortfolioItem from './PortfolioItem';
-import PortfolioItemDescription from './PortfolioItemDescription';
-import PortfolioItemImage from './PortfolioItemImage';
+import ProjectItem from './ProjectItem';
+import ProjectItemDescription from './ProjectItemDescription';
+import ProjectItemImage from './ProjectItemImage';
 
-export default function Portfolio() {
+export default function Projects() {
   return (
-    <section name="projects-section" className="portfolio-section" >
-      <div className="row portfolio-row pcb-flow-row">
-        <div className="portfolio-item" >
-          <PortfolioItemImage
-            alt="portfolio demo item"
+    <section name="projects-section" className="project-section" >
+      <div className="row project-row pcb-flow-row">
+        <div className="project-item" >
+          <ProjectItemImage
+            alt="project demo item"
             imgSrc="/images/pcb-flow-mockup-original.png"
             demoUrl="http://pcb-flow.herokuapp.com/"
           />
-          <PortfolioItemDescription
+          <ProjectItemDescription
             alias="pcb-flow"
             repoUrl="https://github.com/hayden7913/bread-pcb-tool"
             title="PCB Flow"
@@ -23,37 +23,37 @@ export default function Portfolio() {
           />
         </div>
       </div>
-      <div  className="row portfolio-row pomtracker-row">
-        <div className="portfolio-item" >
-          <PortfolioItemImage
-            alt="portfolio demo item"
+      <div  className="row project-row pomtracker-row">
+        <div className="project-item" >
+          <ProjectItemImage
+            alt="project demo item"
             className="pomtracker-mockup-sm-screen"
             imgSrc="/images/pomtracker-mockup.png"
             demoUrl="http://pomtracker.herokuapp.com/"
           />
-          <PortfolioItemDescription
+          <ProjectItemDescription
             alias="pomtracker"
             repoUrl="https://github.com/hayden7913/PomTracker-Capstone"
             title="Pomtracker"
             techIcons={["react", "sass", "nodejs", "mongodb"]}
             description="A Pomodoro timer with integrated time tracking. I built this app with my own use in mind as I struggled to find existing tools for time tracking and the Pomodoro system that worked for me. I use this app every day to manage my Pomodoro sessions and keep my weekly productivity goals on track."
           />
-          <PortfolioItemImage
-            alt="portfolio demo item"
+          <ProjectItemImage
+            alt="project demo item"
             className="pomtracker-mockup-lg-screen"
             imgSrc="/images/pomtracker-mockup.png"
             demoUrl="http://pomtracker.herokuapp.com/"
           />
         </div>
       </div>
-      <div className="row portfolio-row anki-assistant-row">
-        <div className="portfolio-item" >
-          <PortfolioItemImage
-            alt="portfolio demo item"
+      <div className="row project-row anki-assistant-row">
+        <div className="project-item" >
+          <ProjectItemImage
+            alt="project demo item"
             imgSrc="/images/anki-assistant-mockup.png"
             demoUrl="http://anki-assistant.herokuapp.com/"
           />
-          <PortfolioItemDescription
+          <ProjectItemDescription
             alias="anki-assistant"
             repoUrl="https://github.com/hayden7913/AnkiAssistant"
             title="AnkiAssistant"
