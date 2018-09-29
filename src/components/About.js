@@ -14,7 +14,7 @@ export default function About() {
           <div className="about-text">
             <p className="about-paragraph">
               I take great joy in finding ways to use programming to make life less tedious and more fun.
-              I also earnestly look forward to putting web software to use to make meaningful improvements in the qulaity of other's lives and ending suffering in the world.
+              I also earnestly look forward to putting web software to use to make meaningful improvements in the quality of other's lives and ending suffering in the world.
               Aside from my true obsession with coding, I'm also into rock climbing, meditation, and sipping on tasty microbrews.
             </p>
             <span className="about-contact-wrapper">

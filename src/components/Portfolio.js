@@ -37,7 +37,7 @@ export default function Portfolio() {
             repoUrl="https://github.com/hayden7913/PomTracker-Capstone"
             title="Pomtracker"
             techIcons={["react", "sass", "nodejs", "mongodb"]}
-            description="A pomodoro timer with integrated time tracking. I built this app with my own use in mind as I struggled to find exisiting tools for time tracking and the Pomodoro system that worked for me. I use this app every day to manage my pomodoro sessions and keep my weekly productivity goals on track."
+            description="A Pomodoro timer with integrated time tracking. I built this app with my own use in mind as I struggled to find existing tools for time tracking and the Pomodoro system that worked for me. I use this app every day to manage my Pomodoro sessions and keep my weekly productivity goals on track."
           />
           <PortfolioItemImage
             alt="portfolio demo item"
@@ -59,7 +59,7 @@ export default function Portfolio() {
             repoUrl="https://github.com/hayden7913/AnkiAssistant"
             title="AnkiAssistant"
             techIcons={["jquery", "sass"]}
-            description="AnkiAssistant leverages the Globse language dictionary API to create a user interface that streamlines making custom Spanish language vocabulary flash card decks on Anki, the excellent spaced repitition based flash card platform."
+            description="AnkiAssistant leverages the Globse language dictionary API to create a user interface that streamlines making custom Spanish language vocabulary flash card decks on Anki, the excellent spaced repetition based flash card platform."
           />
         </div>
       </div>
