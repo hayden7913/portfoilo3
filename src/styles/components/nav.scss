@@ -1,17 +1,18 @@
 .nav {
   color: $black-faded;
+  border-bottom: 1px solid;
+  border-color: transparent;
   font-weight: 300;
   line-height: 50px;
   overflow: hidden;
   padding-top: 50px;
   position: fixed;
   height: 0;
-  transition: height .4s ease, background-color .8s ease;
+  transition: height .4s ease, background-color .8s ease, border-color .8s ease;
   width: 100%;
   z-index: 1000;
 
   @media only screen and (min-width: $breakpoint-show-nav) {
-    border-bottom: none;
     height: initial;
     line-height: 1;
     padding: 15px 0;
@@ -23,11 +24,11 @@
 
   &.has-background {
     background-color: black;
-    border-bottom: 1px solid $black-faded;
+    border-color: $black-faded;
     box-shadow: 0 0 50px -10px rgba(0,31,48,.2);
     color: $grey-super-light;
     opacity: .8;
-    transition: background-color .8s ease, border-bottom .5s ease;
+    transition: height .4s ease, background-color 1s ease, border-color 1s ease;
   }
 
   &.is-active {
@@ -40,7 +41,6 @@
       font-weight: 400;
       opacity: .9;
       padding-top: 20px;
-      transition: height .4s ease, background-color .4s ease;
     }
   }
 }
@@ -121,6 +121,18 @@
     &.is-top {
       color: black;
     }
+  }
+}
+
+.nav-contact-links {
+  font-size: .9em;
+
+  @media only screen and (max-width: $breakpoint-show-nav-less-one) {
+    @include hide();
+  }
+
+  @media only screen and (min-width: $breakpoint-show-nav) {
+    display: inline-block;
   }
 }
 

@@ -4,36 +4,10 @@
   line-height: 2;
 }
 
-%contact-link {
-  color: $grey-super-dark;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.5em;
-  margin-right: 15px;
-}
-
-.contact-links {
-  font-size: .9em;
-
-  &.nav-contact-links {
-    display: none;
-    font-size: .9em;
-
-    @media only screen and (min-width: $breakpoint-show-nav) {
-      display: inline-block;
-    }
-  }
-}
-
-
-
 .contact-footer {
   bottom: 0;
   left: 50%;
   margin-bottom: 20px;
   position: absolute;
   transform: translateX(-50%);
-  // @include transform() {
-  //
-  // }
 }
