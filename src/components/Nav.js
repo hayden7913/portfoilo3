@@ -68,7 +68,7 @@ export default function Nav({
           </Link>
           <Link className={menuItemClass}
             duration={500}
-            offset={-150}
+            offset={-70}
             onClick={toggleMenu}
             smooth
             spy
