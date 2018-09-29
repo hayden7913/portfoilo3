@@ -85,8 +85,8 @@
 }
 
 .divider-about-mobile {
+  margin-top: 13%;
   text-align: right;
-
   @media only screen and (min-width: $breakpoint-swap-about-image) {
     @include hide();
   }

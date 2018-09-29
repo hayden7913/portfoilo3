@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { withRouter } from  'react-router';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import About from './About';
+import Divider from './Divider';
 import Hero from './Hero';
 import Nav from './Nav';
 import Portfolio from './Portfolio';
-
 
 class LandingPage extends Component {
   constructor() {
@@ -50,8 +50,10 @@ class LandingPage extends Component {
           isTop={scrollY === 0}
        />
         <Hero />
+        <Divider  alias="projects" name="projects" title="projects" />
         <main>
           <Portfolio />
+          <Divider alias="about-mobile" name="about" title="about me" topBottom />
           <About />
           <div style={{height: '300px'}}></div>
         </main>

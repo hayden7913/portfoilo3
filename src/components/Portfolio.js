@@ -7,7 +7,6 @@ import PortfolioItemImage from './PortfolioItemImage';
 export default function Portfolio() {
   return (
     <section name="projects-section" className="portfolio-section" >
-      <Divider  alias="projects" name="projects" title="projects" />
       <div className="row portfolio-row pcb-flow-row">
         <div className="portfolio-item" >
           <PortfolioItemImage

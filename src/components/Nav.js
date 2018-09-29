@@ -62,7 +62,7 @@ export default function Nav({
             onClick={toggleMenu}
             smooth
             spy
-            to="projects-section"
+            to="projects"
           >
             PROJECTS
           </Link>

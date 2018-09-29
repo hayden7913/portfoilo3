@@ -4,7 +4,6 @@ import Divider from './Divider';
 export default function About() {
   return (
       <section name="about" className="row about-section">
-        <Divider alias="about-mobile" name="about" title="about me" topBottom />
         <div className="col6 col-about col-about-left">
           <img className="about-image" src="/images/rock-hand-circle.png" alt="climbing photo"/>
           <div className="about-image-container"></div>
