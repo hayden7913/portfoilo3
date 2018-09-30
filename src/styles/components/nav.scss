@@ -8,7 +8,7 @@
   padding-top: 50px;
   position: fixed;
   height: 0;
-  transition: height .4s ease, background-color .8s ease, border-color .8s ease;
+  transition: height .4s ease, background-color .6s ease, border-color .6s ease;
   width: 100%;
   z-index: 1000;
 
@@ -28,7 +28,7 @@
     box-shadow: 0 0 50px -10px rgba(0,31,48,.2);
     color: $grey-super-light;
     opacity: .8;
-    transition: height .4s ease, background-color 1s ease, border-color 1s ease;
+    transition: height .4s ease, background-color .8s ease, border-color .8s ease;
   }
 
   &.is-active {
