@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from  'react-router';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Element } from 'react-scroll';
 import About from './About';
 import Divider from './Divider';
 import Hero from './Hero';
@@ -19,7 +19,7 @@ class LandingPage extends Component {
 
   componentDidMount() {
     window.addEventListener('resize', () => (
-      this.setState({ windowWidth: window.innerWidth }, () => console.log(this.state.windowWidth))
+      this.setState({ windowWidth: window.innerWidth })
     ));
 
     window.addEventListener('scroll', () => {
@@ -55,7 +55,6 @@ class LandingPage extends Component {
           <Projects />
           <Divider alias="about-mobile" name="about" title="about me" topBottom />
           <About />
-          <div style={{height: '300px'}}></div>
         </main>
       </Element>
     );

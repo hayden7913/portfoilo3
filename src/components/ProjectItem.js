@@ -1,25 +1,18 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 import ProjectItemDescription from './ProjectItemDescription';
 import ProjectItemImage from './ProjectItemImage';
-import Routes from '../routes';
-
 
 export default function ProjectItem({
   alt,
-  className,
   demoUrl,
   imgSrc,
   alias,
-  projectItem,
   repoUrl,
   title,
-  titleColor,
   description,
   techIcons,
 }) {
-
   return (
     <div className="row project-row">
       <div className="project-item" >

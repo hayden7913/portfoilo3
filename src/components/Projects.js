@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import Divider from './Divider';
-import ProjectItem from './ProjectItem';
+import React from 'react';
 import ProjectItemDescription from './ProjectItemDescription';
 import ProjectItemImage from './ProjectItemImage';
 
@@ -19,7 +17,7 @@ export default function Projects() {
             repoUrl="https://github.com/hayden7913/bread-pcb-tool"
             title="PCB Flow"
             techIcons={["react", "sass", "nodejs", "mongodb"]}
-            description="A Drag and drop tool for designing electronic devices. Tailored specifically to make electronics design accessible and approachable for non-engineers."
+            description="A drag and drop tool for designing electronic devices. Tailored specifically to make electronics design accessible and approachable for non-engineers."
           />
         </div>
       </div>

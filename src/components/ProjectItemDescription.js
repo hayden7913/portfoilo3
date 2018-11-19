@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
 
@@ -20,7 +20,6 @@ export default function ProjectsItemDescription({
   techIcons,
   title,
 }) {
-
   return (
     <div className="col3 col-description">
       <div className={`project-description-wrapper ${alias}-description-wrapper`}>

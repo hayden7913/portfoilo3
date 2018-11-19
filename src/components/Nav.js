@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import classNames from 'classnames';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll';
 import ContactLinks from './ContactLinks';
-import Projects from './Projects';
 
 export default function Nav({
   areLinksHidden,
   isTop,
   onMenuClick,
   toggleMenu,
-  windowWidth,
  }) {
   const navClass = classNames('nav', {
     'is-active': !areLinksHidden,
@@ -29,18 +27,6 @@ export default function Nav({
   const menuItemClass = classNames('nav-menu-item', {
     'not-top': !isTop,
   });
-
-  // const aboutLinkClass = classNames('nav-menu-item', {
-  //   'is-active': currentRoute === '/',
-  // });
-  //
-  // const projectLinkClass = classNames('nav-menu-item', {
-  //   'is-active': currentRoute === '/project',
-  // });
-  //
-  // const contactLinkClass = classNames('nav-menu-item', {
-  //   'is-active': currentRoute === '/contact',
-  // });
 
   return (
     <nav className={navClass}>

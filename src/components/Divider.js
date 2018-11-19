@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import React from 'react';
 
 export default function Divider({ alias, name, title, topBottom }) {
   return (
